@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Poppins:wght@200&display=swap");
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #3c486b;
+  color: white;
+}
+.header .container img {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.header .container .styling {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: 800;
+}
+.header .container nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  /* away from the logo */
+  justify-content: flex-end;
+}
+.header .container nav ul {
+  display: flex;
+  list-style: none;
+}
+.header .container nav ul li .active {
+  display: block;
+  color: white;
+  font-size: 19px;
+  transition: 0.3s;
+  padding: 35px 25px;
+  text-decoration: none;
+}
+.header .container nav ul li .active:active,
+.header .container nav ul li .active:hover {
+  color: wheat;
+}
