@@ -1,19 +1,23 @@
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
+import "./Footer.css";
 const Footer = () => {
   return (
     <Fragment>
-      <ul>
-        <li>
-          <a href="/">Facebook</a>
-        </li>
-        <li>
-          <a href="/">Twitter</a>
-        </li>
-        <li>
-          <a href="/">Github</a>
-        </li>
-      </ul>
-      <p> All rights reserved by &copy; Murad Dabbous 2023</p>
+      <footer className="footer">
+        <div className="container">
+          <p>All rights reserved by &copy; Murad Dabbous 2023 </p>
+          <Link to="#" className="media">
+            <i className="fa-brands fa-facebook"> facebook </i>
+          </Link>
+          <Link to="#" className="media">
+            <i className="fa-brands fa-twitter"> twitter </i>
+          </Link>
+          <Link to="#" className="media">
+            <i className="fa-brands fa-github"> github </i>
+          </Link>
+        </div>
+      </footer>
     </Fragment>
   );
 };

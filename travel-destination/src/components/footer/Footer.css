@@ -1,0 +1,69 @@
+/* .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+}
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+/* background-color: #3c486b;
+  color: white;
+}
+.footer .container p {
+  font-size: 17px;
+}
+.footer .container a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 30px 10px;
+} */
+.footer .container a i {
+  color: white;
+}
+*/ .footer {
+  /* // Replace with the height your footer should be */
+  height: 24px;
+  /* // Don't change */
+  width: 100%;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-color: #3c486b;
+  position: fixed;
+  bottom: 0pt;
+  left: 0pt;
+}
+
+.footer .container {
+  /* // Replace with the height your footer should be */
+  height: 60px;
+  /* // Visible width of footer */
+  width: 100%;
+  margin: auto;
+  background-color: #3c486b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container .media {
+  padding: 10px;
+  text-decoration: none;
+}
+.footer .container .media i:hover {
+  color: blanchedalmond;
+}
+/* .footer .container p {
+  font-size: 17px;
+}
+.footer .container a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  /* padding: 30px 10px; */
+/* }  */

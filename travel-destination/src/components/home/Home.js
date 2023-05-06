@@ -3,11 +3,11 @@ import Header from "../header/Header";
 import Tours from "../tours/Tours";
 import Footer from "../footer/Footer";
 // import data from "../../data/db.json";
-const Home = () => {
+const Home = (props) => {
   return (
     <Fragment>
       <Header />
-      <Tours />
+      <Tours data={props.data} />
       <Footer />
     </Fragment>
   );

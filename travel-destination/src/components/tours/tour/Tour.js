@@ -1,19 +1,16 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
+import "./Tour.css";
 const Tour = (props) => {
   return (
     <Fragment>
-      {props.data.map((dataItem) => {
-        return (
-          <Link to="/TourDetails/:id" key={dataItem.id}>
-            <div>
-              <p>{dataItem.name}</p>
-              <img src={dataItem.image} alt={dataItem.name} />
-              <hr />
-            </div>
-          </Link>
-        );
-      })}
+      <Link to={`/city/${props.id}`} className="styling">
+        <div key={props.id}>
+          <p>{props.name}</p>
+          <img src={props.image} alt={props.name} />
+          <hr />
+        </div>
+      </Link>
     </Fragment>
   );
 };
